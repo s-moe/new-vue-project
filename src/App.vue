@@ -8,7 +8,8 @@
         :name="friend.name"
         :phone-number="friend.phone"
         :email-address="friend.email"
-        v-bind:is-favorite="true"
+        v-bind:is-favorite="friend.isFavorite"
+        @toggle-favorite="toggleFavoriteStatus"
       ></friend-contact>
     </ul>
   </section>
@@ -24,15 +25,22 @@ export default {
           name: "Manuel Lorenz",
           phone: "012344",
           email: "manuel@localhost.com",
+          isFavorite: true,
         },
         {
           id: "julie",
           name: "Julie Lorenzo",
           phone: "012344",
           email: "julie@localhost.com",
+          isFavorite: false,
         },
       ],
     };
+  },
+  methods: {
+    toggleFavoriteStatus() {
+      alert("this works!");
+    },
   },
 };
 </script>
