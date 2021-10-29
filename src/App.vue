@@ -3,15 +3,12 @@
     <header><h1>My Friends</h1></header>
     <ul>
       <friend-contact
-        name="Manuel Lorenz"
-        phone-number="012345"
-        email-address="manuel@localhost.com"
-        is-favorite="1"
-      ></friend-contact>
-      <friend-contact
-        name="Julie Jones"
-        phone-number="012345"
-        email-address="julie@localhost.com"
+        v-for="friend in friends"
+        :key="friend.id"
+        :name="friend.name"
+        phone-number="friend.phoneNumber"
+        email-address="friend.emailAddress"
+        v-bind:is-favorite="true"
       ></friend-contact>
     </ul>
   </section>
