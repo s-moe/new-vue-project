@@ -20,7 +20,16 @@
 
 <script>
 export default {
-  props: ["name", "phoneNumber", "emailAddress", "isFavorite"],
+  // props: ["name", "phoneNumber", "emailAddress", "isFavorite"],
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    phoneNumber: String,
+    emailAddress: String,
+    isFavorite: String,
+  },
   data() {
     return {
       detailsAreVisible: false,
