@@ -6,8 +6,8 @@
         v-for="friend in friends"
         :key="friend.id"
         :name="friend.name"
-        phone-number="friend.phoneNumber"
-        email-address="friend.emailAddress"
+        :phone-number="friend.phone"
+        :email-address="friend.email"
         v-bind:is-favorite="true"
       ></friend-contact>
     </ul>
