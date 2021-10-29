@@ -26,9 +26,22 @@ export default {
       type: String,
       required: true,
     },
-    phoneNumber: String,
-    emailAddress: String,
-    isFavorite: String,
+    phoneNumber: {
+      type: String,
+      required: true,
+    },
+    emailAddress: {
+      type: String,
+      required: true,
+    },
+    isFavorite: {
+      type: String,
+      required: false,
+      default: "0",
+      validator: function (value) {
+        return value === "1" || value === "0";
+      },
+    },
   },
   data() {
     return {
