@@ -30,7 +30,7 @@ export default {
         },
         {
           id: "julie",
-          name: "Julie Lorenzo",
+          name: "Julie Jones",
           phone: "012344",
           email: "julie@localhost.com",
           isFavorite: false,
