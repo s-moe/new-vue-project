@@ -12,7 +12,12 @@
       <label>Email</label>
       <input type="email" />
     </div>
+    <div>
+      <button>Add Contact</button>
+    </div>
   </form>
 </template>
 
-<script></script>
+<script>
+export default {};
+</script>
