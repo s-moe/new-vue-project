@@ -2,15 +2,15 @@
   <form>
     <div>
       <label>Name</label>
-      <input type="text" />
+      <input type="text" v-model="enteredName" />
     </div>
     <div>
       <label>Phone</label>
-      <input type="tel" />
+      <input type="tel" v-model="enteredPhone" />
     </div>
     <div>
       <label>Email</label>
-      <input type="email" />
+      <input type="email" v-model="enteredEmail" />
     </div>
     <div>
       <button>Add Contact</button>
@@ -19,5 +19,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  emits: ["add-contact"],
+  data() {
+    return {
+      enteredName: "",
+      enteredPhone: "",
+      enteredEmail: "",
+    };
+  },
+};
 </script>
