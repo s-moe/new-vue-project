@@ -74,6 +74,9 @@ export default {
     toggleFavorite() {
       this.$emit("toggle-favorite", this.id);
     },
+    deleteFriend() {
+      this.$emit("delete");
+    },
   },
 };
 </script>
