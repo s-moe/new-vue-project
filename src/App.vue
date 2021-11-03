@@ -12,6 +12,7 @@
         :email-address="friend.email"
         v-bind:is-favorite="friend.isFavorite"
         @toggle-favorite="toggleFavoriteStatus"
+        @delete="deleteContact"
       ></friend-contact>
     </ul>
   </section>
