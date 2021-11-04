@@ -37,6 +37,13 @@ export default {
           email: "julie@localhost.com",
           isFavorite: false,
         },
+        {
+          id: "frank",
+          name: "Frank Nunez",
+          phone: "01234",
+          email: "frank@localhost.com",
+          isFavorite: false,
+        },
       ],
     };
   },
